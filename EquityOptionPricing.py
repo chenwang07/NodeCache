@@ -9,7 +9,6 @@ class EquityOptionPricing:
     def presentValue(self):
         print(" inside calculation logic")
         return self.impliedVolatility() * self.stockPrice() * self.timeToExp() * self.strike()
-    
     def impliedVolatility(self):
         return 0.3
 
