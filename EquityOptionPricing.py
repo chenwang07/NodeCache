@@ -8,7 +8,9 @@ class EquityOptionPricing:
     @Node
     def presentValue(self):
         print(" inside calculation logic")
+        # illustration purpose, not the real pricing function
         return self.impliedVolatility() * self.stockPrice() * self.timeToExp() * self.strike()
+
     def impliedVolatility(self):
         return 0.3
 
