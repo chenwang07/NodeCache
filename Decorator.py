@@ -7,11 +7,7 @@ class Node:
         #obj = EquityOptionPricing
         import functools
         return functools.partial(self.__call__, obj)
-    
-    def __set__(self, obj, value):
-        pass
 
-    
     def __init__(self, m) -> None:
         self.func = m
         self.need_update = True
